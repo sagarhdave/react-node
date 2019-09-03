@@ -47,10 +47,9 @@ const stateSelector = createStructuredSelector({
 
 export default function LoginForm() {
   const dispatch = useDispatch();
-  const onChangeLogin = e =>
-    dispatch(changeLoginAction(parseInt(e.target.value, 10)));
+  const onChangeLogin = e => dispatch(changeLoginAction(e.target.value));
   const onChangePassword = e => dispatch(changePasswordAction(e.target.value));
-  const onEnterLogin = login => dispatch(enterLoginAction(parseInt(login, 10)));
+  const onEnterLogin = login => dispatch(enterLoginAction(login, 10));
   const onEnterPassword = password => dispatch(enterPasswordAction(password));
   const handleStepBack = () => dispatch(stepBackAction());
   const handleKeyPress = e =>
@@ -69,15 +68,15 @@ export default function LoginForm() {
         {activeStep === 0 ? (
           <Fragment>
             <LabelWrapper>
-              <FormattedMessage {...messages.numberId} />
+              <FormattedMessage {...messages.emailAddress} />
             </LabelWrapper>
 
-            <FormattedMessage {...messages.inputNumber}>
+            <FormattedMessage {...messages.inputEmail}>
               {placeholder => (
                 <InputWrapper
                   key={1}
                   placeholder={placeholder}
-                  type="number"
+                  type="email"
                   value={login || ''}
                   error={error}
                   onChange={onChangeLogin}

@@ -9,9 +9,13 @@ import { defineMessages } from 'react-intl';
 export const scope = 'app.components.LoginForm';
 
 export default defineMessages({
-  numberId: {
-    id: `${scope}.numberId`,
-    defaultMessage: 'Account pin',
+  emailAddress: {
+    id: `${scope}.emailAddress`,
+    defaultMessage: 'Email Address',
+  },
+  inputEmail: {
+    id: `${scope}.inputEmail`,
+    defaultMessage: 'Enter the email address',
   },
   accessCode: {
     id: `${scope}.accessCode`,
@@ -25,13 +29,9 @@ export default defineMessages({
     id: `${scope}.backText`,
     defaultMessage: 'Back',
   },
-  inputNumber: {
-    id: `${scope}.inputNumber`,
-    defaultMessage: 'Enter the account pin',
-  },
   inputPassowrd: {
     id: `${scope}.inputPassowrd`,
-    defaultMessage: 'Enter the access code',
+    defaultMessage: 'Enter the password',
   },
   inputLogin: {
     id: `${scope}.inputLogin`,

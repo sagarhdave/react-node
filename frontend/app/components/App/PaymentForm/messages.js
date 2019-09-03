@@ -99,7 +99,7 @@ export default defineMessages({
   },
   helmetPaymentTitle: {
     id: `${scope}.helmetPaymentTitle`,
-    defaultMessage: 'Payment · Bank Application',
+    defaultMessage: 'Payment · Limkokwing University',
   },
   inputMakePayment: {
     id: `${scope}.inputMakePayment`,

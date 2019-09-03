@@ -15,23 +15,23 @@ export default defineMessages({
   },
   helmetLoginTitle: {
     id: `${scope}.helmetPaymentTitle`,
-    defaultMessage: 'Login · Bank Application',
+    defaultMessage: 'Login · Limkokwing University',
   },
   loginError: {
     id: `${scope}.loginError`,
-    defaultMessage: 'Please enter the correct account pin',
+    defaultMessage: 'Please enter the correct email address',
   },
   passwordError: {
     id: `${scope}.passwordError`,
-    defaultMessage: 'Please enter the correct access code',
+    defaultMessage: 'Please enter the correct password',
   },
   loginEmpty: {
     id: `${scope}.loginEmpty`,
-    defaultMessage: 'Please enter the account pin',
+    defaultMessage: 'Please enter the email address',
   },
   passwordEmpty: {
     id: `${scope}.passwordEmpty`,
-    defaultMessage: 'Please enter the access code',
+    defaultMessage: 'Please enter the password',
   },
   serverError: {
     id: `${scope}.serverError`,
@@ -39,6 +39,6 @@ export default defineMessages({
   },
   loginAttemptError: {
     id: `${scope}.loginAttemptError`,
-    defaultMessage: 'Please enter the correct account pin or access code',
+    defaultMessage: 'Please enter the correct email address or password',
   },
 });
